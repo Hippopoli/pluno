@@ -1,0 +1,9 @@
+assumptionsAPR<-
+  data.frame(
+    FICO<-c(rep("660-700",5),rep("700-740",5),rep("740-850",5)),
+    tenor<-rep(c(24,36,48,60,72),3),
+    APR<-c(0.155,0.149,0.158,0.173,0.179,
+           0.117,0.113,0.123,0.139,0.148,
+           0.104,0.086,0.095,0.0110,0.118))
+names(assumptionsAPR)<-c("FICO","tenor","APR")
+saveRDS(assumptionsAPR,file="/Users/Summer/Desktop/accountNPV/assumptionsAPR.Rda")
